@@ -1,0 +1,35 @@
+{
+  "tests": "../tests/*",
+  "timeout": 10000,
+  "output": "../output",
+  "helpers": {
+    "WebDriverIO": {
+      "multiremote": {
+        "MyChrome": {
+          "desiredCapabilities": {
+            "browserName": "chrome"
+          }
+        },
+          "MyFirefox": {
+            "desiredCapabilities": {
+              "browserName": "firefox"
+            }
+          }
+        },
+        "url": "https://betway.com",
+        "browser": "chrome",
+        "windowSize": "maximize",
+        "smartWait": 5000,
+        "restart": true
+      }
+    },
+    "bootstrap": false,
+    "mocha": {
+      "reporterOptions": {
+        "reportDir": "output",
+        "enableCharts": true,
+        "enableCode": true
+      }
+    },
+    "name": "codeceptjs-webdriverio"
+  }

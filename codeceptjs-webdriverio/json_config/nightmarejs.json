@@ -1,0 +1,13 @@
+{
+  "tests": "../tests/*",
+  "timeout": 10000,
+  "output": "../output",
+  "helpers": {
+    "Nightmare": {
+      "url": "https://betway.com"
+    }
+  },
+  "bootstrap": false,
+  "mocha": {},
+  "name": "codeceptjs-nightmarejs"
+}
